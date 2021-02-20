@@ -1,0 +1,34 @@
+3.1.1.5
+n = int(input())
+print(100<=n)
+-----------------------------------------------------------------
+3.1.1.11
+m = str(input())
+if m== "Skrzydłokwiat" :
+    print("Skrzydłokwiat jest najlepszą rośliną w historii!")
+else:
+    print("Nie, ja chcę Skrzydłokwiat...!")
+-----------------------------------------------------------------
+3.1.1.12
+dochód = float(input("Wprowadź roczny dochód: "))
+if dochód > 85528:
+    podatek = ((dochód - 85528) * 32 / 100) + 14839.02
+if dochód <= 85528 :
+    podatek = (dochód * 18 / 100) - 556.02
+if podatek < 0:
+    podatek = 0
+podatek = round(podatek, 0)
+print("Podatek wynosi:", podatek)
+-----------------------------------------------------------------
+3.1.1.13
+rok = int(input("Wprowadź rok: "))
+if rok <= 1582 :
+    print("Nie w kalendarzu Gregoriańskim")
+elif rok % 4 != 0 :
+    print("zwykły rok")
+elif rok % 100 != 0 :
+    print("rok przestępny")
+elif rok % 400 != 0 :
+    print("zwykły rok")
+else :
+    print("rok przestępny")

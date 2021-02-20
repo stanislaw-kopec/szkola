@@ -1,0 +1,9 @@
+liczby_z_kapelusza = [1, 2, 3, 4, 5]
+
+liczby_z_kapelusza[2] = int(input("Wprowadź liczbę całkowitą: "))
+
+del liczby_z_kapelusza[-1]
+
+print(len(liczby_z_kapelusza))
+
+print(liczby_z_kapelusza)

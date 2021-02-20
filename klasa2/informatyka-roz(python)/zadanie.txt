@@ -1,0 +1,24 @@
+tajnyNumer = 777
+
+print(
+"""
++================================+
+| Witaj w mojej grze, mugolu!    |
+| Wprowadź liczbę całkowitą      |
+| i zgadnij, jaki numer          |
+| wybrałem dla ciebie.           |
+| Jaki jest więc sekretny numer? |
++================================+
+""")
+
+# Napisz kod, który prosi użytkownika o wprowadzenie liczby całkowitej.
+# Napisz tutaj swoją pętlę while i resztę kodu.
+
+#
+
+x = int(input("Podaj liczbę: "))
+while x != tajnyNumer:
+    print("Nie, to nie jest ta liczba, którą wybrałem dla ciebie. Spróbuj ponownie!")
+    x = int(input("Podaj liczbę: "))
+else:
+    print("Dobra robota! To numer, który wybrałem dla ciebie! Jesteś teraz wolny.")

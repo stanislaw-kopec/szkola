@@ -1,0 +1,33 @@
+LAB 3.1.2.14
+-------------------------------------------------
+blokow = int(input("Wprowadź liczbę bloków: "))
+
+wysokosc = 0
+w_warstwie = 1
+
+
+while blokow >= w_warstwie:
+    wysokosc += 1
+    blokow -= w_warstwie
+    w_warstwie += 1
+    
+    
+
+print("Wysokość piramidy wynosi:", wysokosc)
+
+-------------------------------------------------
+c0 = int(input("Podaj wartość c0: "))
+
+if c0 > 1:
+	krokow = 0
+	while c0 != 1:
+		if c0 %2 != 0:
+			cnew = 3 * c0 + 1
+		else:
+			cnew = c0 // 2
+		print(c0)
+		c0 = cnew
+		krokow += 1
+	print("liczba kroków =", krokow)
+else:
+	print("Nieprawidłowa wartość c0.")

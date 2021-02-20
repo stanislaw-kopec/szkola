@@ -1,0 +1,16 @@
+c0 = int(input("Podaj wartość c0: "))
+
+if c0 > 1:
+	krokow = 0
+	while c0 != 1:
+		if c0 %2 != 0:
+			cnew = 3 * c0 + 1
+			print(c0)
+		else:
+			cnew = c0 // 2
+			print(c0)
+		c0 = cnew
+		krokow += 1
+	print("1\nliczba kroków =", krokow)
+else:
+	print("Nieprawidłowa wartość c0.")

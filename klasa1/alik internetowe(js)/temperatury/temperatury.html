@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <title>Temperatury</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Przelicznik temperatur</h1>
+  <hr>
+	<form name="formularz">
+		Podaj temperaturę w <sup>o</sup>C
+		<input type="number" name="liczba" value="0">
+    Przelicz na:
+		<input type="button" value="Kelwiny" onclick="k()">
+		<input type="button" value="Fahrenheity" onclick="f()">
+		<input type="button" value="Rankine’a" onclick="r()">
+	</form>
+  <br>
+	<div id="wynik"></div>
+  <script src="skrypt.js" type="text/javascript"></script>
+</body>
+</html>

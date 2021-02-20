@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>cw10 obiekty wstęp</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h1>cw10 obiekty wstęp</h1>
+	<script type="text/javascript">
+	
+		let a = "Już za chwilę ferie";
+			document.write(typeof(a)+"<br>");
+			document.write(a.italics()+"<br>");
+			document.write(a.toUpperCase()+"<br>");
+			document.write((new Date()).toLocaleDateString());
+			const ul = {
+				imie: "Tomasz",
+				nazwisko: "Kowalski",
+				klasa: "1P",
+				przedstawSie: function(){
+					return "<hr>Informacja o uczniu: "+this.imie+" "+this.nazwisko+" klasa: "+this.klasa+"<br>";
+				}
+			};
+			console.log(ul);
+			document.write(ul.przedstawSie());
+	</script>
+</body>
+
+</html>

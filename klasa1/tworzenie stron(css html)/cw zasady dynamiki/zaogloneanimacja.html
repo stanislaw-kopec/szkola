@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <title>Bulbulatory</title>
+  <meta charset="UTF-8">
+  <style>
+  body{
+    background-color: #2b2b2b;
+  }
+  #naglowekg{
+    text-align: center; color: #FF00FF;
+    font-family: 'Monoton', cursive;
+  }
+  #calosc{
+    margin-left: 90px;
+    margin-right: 90px;
+  }
+  h2{
+    color: #FFF400;
+  }
+  p{
+    color: #00FFFF;
+  }
+  #obraznewton{
+
+  }
+  .obraz{
+	
+  }
+  #stopka{
+    color: #FFFFFF;
+    font-family: 'Cabin Condensed', sans-serif;
+    padding: 10px;
+  }
+  @keyframes animacja {
+    from {background-color: #2b2b2b;}
+    to {background-color: #FFFFFF;}
+    from {color: #FFFFFF;}
+    to {color: #000000;}
+  }
+  #stopka:hover{
+    background-color: #FFFFFF;
+    color: #000000;
+    animation-name: animacja;
+    animation-duration: 6s;
+	border-radius: 30px;
+  }
+  .czensc{
+    border-left-style: solid;
+    border-color: #FF00FF;
+    padding: 10px;
+  }
+  .czensc:hover { background-color: #000000;
+    border-right-style: dotted;
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-color: #FF00FF;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-family: 'Big Shoulders Text', cursive;
+  }
+  </style>
+</head>
+<body>
+  <div id="calosc">
+    <div id="naglowekg">
+      <h1>ZASADY DYNAMIKI <br> NEWTONA</h1>
+    </div>
+    <div>
+      <div class="czensc">
+        <h2>Isaac Newton</h2>
+        <p>Angielski fizyk, matematyk, astronom, filozof, historyk, badacz
+          Biblii i alchemik. Odkrywca trzech zasad dynamiki i prawa powszechnego
+          ciążenia. Uznawany za jednego z najwybitniejszych i najważniejszych uczonych wszech czasów.</p>
+          <div id="obraznewton"><img src="izaak.jpg" alt="Izaak" width="300" height="300"></div>
+        </div>
+        <br>
+        <div class="czensc">
+          <h2>I zasada</h2>
+          <p>Jeżeli na ciało nie działa żadna siła lub siły działające się równoważą,
+            to ciało pozostaje w spoczynku lub porusza się ruchem jednostajnym prostoliniowym.</p>
+            <div class="obraz"><img src="piersza.png" alt="zasada 1" width="500" height="300"></div>
+          </div>
+          <br>
+          <div class="czensc">
+            <h2>II zasada</h2>
+            <p>Jeżeli na ciało działa siła, to porusza się ono ruchem jednostajnie
+              przyspieszonym z przyspieszeniem wprost proporcjonalnym do tej siły i odwrotnie proporcjonalnym do masy ciała.</p>
+              <div class="obraz"><img src="piersza.png" alt="zasada 2" width="500" height="300"></div>
+            </div>
+            <br>
+            <div class="czensc">
+              <h2>III zasada</h2>
+              <p>Jeżeli ciało A działa na ciało B pewną siłą F, to ciało B działa na ciało A
+                siłą o tej samej wartości, takim samym kierunku, ale przeciwnym zwrocie -F.</p>
+                <div class="obraz"><img src="piersza.png" alt="zasada 3" width="500" height="300"></div>
+              </div>
+              <br>
+              <div><hr><p id="stopka">Wszelkie prawa zastrzeżone &copy; 2019 The text, images, and data on The Metropolitan Museum of Art (the "Museum") website (the "Site") are protected by copyright and may be covered by other restrictions as well. The Museum retains all rights, including copyright, in data, images, software, documentation, text, and other information contained in these files (collectively, the "Materials"). Copyright and other proprietary rights may be held by individuals or entities other than, or in addition to, the Museum.</p></div>
+            </div>
+          </div>
+        </body>
+        </html>

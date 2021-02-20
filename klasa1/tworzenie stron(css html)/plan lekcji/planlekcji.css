@@ -1,0 +1,39 @@
+body{
+	background-color: #FFFFFF;
+}
+table{
+	width: 100%;
+}
+table, td, th{
+	border: 1px solid black;
+	border-collapse:collapse;
+}
+caption{
+	font-weight: 700;
+	font-size: 32px;
+	padding: 8px;
+}
+#top{
+	background-color: #e6e600;
+}
+td{
+	padding: 5px;
+	text-align: center;
+}
+th{
+	padding: 8px;
+}
+.puste{
+	background-color: #ff9900;
+}
+.puste:hover{
+	background-color: #ee8800;
+}
+
+#table1{
+	width: 100%;
+}
+#table, .td1, .tr1{
+	border: 1px solid black;
+	border-collapse:collapse;
+}

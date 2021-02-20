@@ -1,0 +1,47 @@
+<!DOCTYPE html> <!--tojestkomentarz-->
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+	<title>cw2</title>
+</head>
+<body>
+	<h1>Operacje arytmetyczne</h1>
+
+	<script type="text/javascript">
+	let a = parseFloat (prompt("Podaj a: ", "8"));
+    console.log("Wartość: "+a+" typ: "+typeof(a));
+
+	let b = parseFloat (prompt("Podaj b: ", "4"));
+    console.log("Wartość: "+b+" typ: "+typeof(b));
+
+	if(isNaN(a) && isNaN(b)) {
+	document.write("<h2 style= 'color:red';>błędne dane a i b</h2>");	
+	} else {
+	if(isNaN(a)) {
+	document.write("<h2 style= 'color:red';>błędne dane a</h2>");
+	} 
+	if(isNaN(b)) {
+	document.write("<h2 style= 'color:red';>błędne dane b</h2>");
+	}
+	}
+	if(!(isNaN(a) || isNaN(b))){
+	if (b==0) {
+	document.write("<h2 style= 'color:green';>poprawne dane</h2>")
+	document.write("<div>"+a+"+"+b+"="+(a+b)+"</div>");
+	document.write("<div>"+a+"-"+b+"="+(a-b)+"</div>");
+	document.write("<div>"+a+"*"+b+"="+(a*b)+"</div>");
+	document.write("<div>nie można dzielić przez zero</div>");
+	}
+	else{
+    document.write("<h2 style= 'color:green';>poprawne dane</h2>")
+	document.write("<div>"+a+"+"+b+"="+(a+b)+"</div>");
+	document.write("<div>"+a+"-"+b+"="+(a-b)+"</div>");
+	document.write("<div>"+a+"*"+b+"="+(a*b)+"</div>");
+	document.write("<div>"+a+"/"+b+"="+(a/b)+"</div>");
+    }
+	}
+
+
+	</script>
+</body>
+</html>

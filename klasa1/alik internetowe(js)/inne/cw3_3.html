@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+    <script type=text/javascript>
+    let i=0;
+    do{
+        i++; //zwiękzanie zmiennej i o 1 2 3 4....//
+       
+	   const losowa = Math.random();//losowanie liczby i wstawianie liczby//
+        document.write(Math.floor(losowa*100)+"<br>");
+    }while(i<20);
+		document.write("<hr>")
+		let losowa = 0;
+		let ile = 0;
+		let suma = 0;
+	do{
+		losowa = Math.floor(losowa+  " ");
+		losowa = Math.random(Math.random()*100);
+		if  (losowa != 0) {
+			ile++;
+			suma += losowa;
+	}
+	}while (losowa !=0);
+		document.write("<p>Ilość wylosowanych liczb: "+ile+" </p>");
+		document.write("<p>suma liczb: "+suma+" </p>");
+    </script>
+    </body>
+</html>

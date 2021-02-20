@@ -1,0 +1,25 @@
+body{
+	background-color: #24a647; margin: 0px;
+}
+#renifer{
+	float: right; 
+}
+#zyczenia{
+	text-align: center; width: 300px; float: left; padding-left: 14%; padding-right: 8%; 
+}
+#santa{
+	float: left; float: left; 
+}
+h1{
+	text-align: center;
+}
+table{
+	width: 84%; margin-left: 8%;
+}
+table, td, th{
+	border: 1px solid black;
+	border-collapse:collapse;
+}
+.topt{
+	text-align: center;
+}

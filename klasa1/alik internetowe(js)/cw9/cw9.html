@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Rekurencja - wstep</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Rekurencja - wstep</h1>
+    <script type="text/javascript">
+        function Repeat(ile) {
+            document.write("ile ="+ile+"<br>");
+            if(ile<10) Repeat(ile + 1);
+            document.write("po ifie ile="+ile+"<br>");
+        }
+        function Reszta(n){
+            if(n>1) Reszta(Math.floor(n/2));
+            document.write(n%2);
+        }
+        Reszta(10);
+        document.write("<br>");
+        Reszta(3);
+        document.write("<br>");
+        Reszta(16);
+        document.write("<br>");
+        Reszta(1);
+        document.write("<br>");
+        Reszta(2);
+        document.write("<br>");
+        Reszta(3);
+       // Repeat(0);
+
+function SilniaREK(m){
+
+    if(m<=1) return 1;
+    return SilniaREK(m-1)*m ;
+} 
+Reszta(10);
+document.write("br");
+
+let m = 5;
+document.write(m+"!=" +SilniaREK(m)+"<br>");
+
+    </script>
+</body>
+
+</html>

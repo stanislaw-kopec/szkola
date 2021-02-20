@@ -1,0 +1,40 @@
+<!DOCTYPE html> <!--tojestkomentarz-->
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>cw1</title>
+</head>
+<body>
+
+<h1>cw1 i pol </h1>
+<script type="text/javascript">
+
+let imie = prompt("Podaj imie:", "Antoni");
+
+console.log("wartość:"+imie+" typ: "+typeof(imie));
+
+if (imie==null) {
+  document.write("<h2 style=color:red;>Brak imienia</h2>");
+
+}else{
+	let rok = new Date().getFullYear();
+document.write("<h2>Witaj: "+imie+" mamy rok: "+rok+"</h2>");
+	}
+	
+	let wiek = prompt("Podaj wiek:", "21");
+console.log("wartość:"+wiek+" typ: "+typeof(wiek));
+
+if (wiek==null) {
+  document.write("<h2 style=color:red;>Nie wiem ile masz lat!</h2>");
+}
+else if (wiek>18) {
+document.write("<h2 style=color:green;>Witaj na naszej stronie!</h2>");
+}
+else {
+document.write("<h2 style=color:red;>Nie masz 18 lat!</h2>");
+	}
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "FileOperationsGIM_1/1.0.0": {
+        "runtime": {
+          "FileOperationsGIM_1.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FileOperationsGIM_1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

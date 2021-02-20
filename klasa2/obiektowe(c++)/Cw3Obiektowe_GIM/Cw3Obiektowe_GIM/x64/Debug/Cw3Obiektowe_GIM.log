@@ -1,0 +1,4 @@
+﻿  Cw3Obiektowe_GIM.cpp
+D:\obiektowe\Cw3Obiektowe_GIM\Cw3Obiektowe_GIM\DocText.h(12,1): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+D:\obiektowe\Cw3Obiektowe_GIM\Cw3Obiektowe_GIM\DocText.h(17,1): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+  Cw3Obiektowe_GIM.vcxproj -> D:\obiektowe\Cw3Obiektowe_GIM\x64\Debug\Cw3Obiektowe_GIM.exe

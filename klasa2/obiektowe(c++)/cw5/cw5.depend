@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1606400332 source:d:\obiektowe zdalne]\cw5\doctext.cpp
+
+1606400101 source:d:\obiektowe zdalne]\cw5\document.cpp
+	"Document.h"
+	<iostream>
+
+1606400338 d:\obiektowe zdalne]\cw5\include\document.h
+	<string>
+
+1606400350 source:d:\obiektowe zdalne]\cw5\src\doctext.h.cpp
+
+1606400362 source:d:\obiektowe zdalne]\cw5\src\document.cpp
+

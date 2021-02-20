@@ -1,0 +1,7 @@
+D:\desktopowe\Owoce\Owoce\bin\Debug\Owoce.exe.config
+D:\desktopowe\Owoce\Owoce\bin\Debug\Owoce.exe
+D:\desktopowe\Owoce\Owoce\bin\Debug\Owoce.pdb
+D:\desktopowe\Owoce\Owoce\obj\Debug\Owoce.csprojAssemblyReference.cache
+D:\desktopowe\Owoce\Owoce\obj\Debug\Owoce.csproj.CoreCompileInputs.cache
+D:\desktopowe\Owoce\Owoce\obj\Debug\Owoce.exe
+D:\desktopowe\Owoce\Owoce\obj\Debug\Owoce.pdb

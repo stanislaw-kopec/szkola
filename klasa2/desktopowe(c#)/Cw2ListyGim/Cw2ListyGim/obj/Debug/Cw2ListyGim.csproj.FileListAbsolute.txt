@@ -1,0 +1,7 @@
+D:\desktopowe\Cw2ListyGim\Cw2ListyGim\bin\Debug\Cw2ListyGim.exe.config
+D:\desktopowe\Cw2ListyGim\Cw2ListyGim\bin\Debug\Cw2ListyGim.exe
+D:\desktopowe\Cw2ListyGim\Cw2ListyGim\bin\Debug\Cw2ListyGim.pdb
+D:\desktopowe\Cw2ListyGim\Cw2ListyGim\obj\Debug\Cw2ListyGim.csprojAssemblyReference.cache
+D:\desktopowe\Cw2ListyGim\Cw2ListyGim\obj\Debug\Cw2ListyGim.csproj.CoreCompileInputs.cache
+D:\desktopowe\Cw2ListyGim\Cw2ListyGim\obj\Debug\Cw2ListyGim.exe
+D:\desktopowe\Cw2ListyGim\Cw2ListyGim\obj\Debug\Cw2ListyGim.pdb

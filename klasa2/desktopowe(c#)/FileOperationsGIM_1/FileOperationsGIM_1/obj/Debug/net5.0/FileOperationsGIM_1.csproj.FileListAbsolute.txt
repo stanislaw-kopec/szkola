@@ -1,0 +1,16 @@
+C:\Users\Stach\Desktop\git\klasa2\desktopowe2tiGim\FileOperationsGIM_1\FileOperationsGIM_1\bin\Debug\net5.0\FileOperationsGIM_1.exe
+C:\Users\Stach\Desktop\git\klasa2\desktopowe2tiGim\FileOperationsGIM_1\FileOperationsGIM_1\bin\Debug\net5.0\FileOperationsGIM_1.deps.json
+C:\Users\Stach\Desktop\git\klasa2\desktopowe2tiGim\FileOperationsGIM_1\FileOperationsGIM_1\bin\Debug\net5.0\FileOperationsGIM_1.runtimeconfig.json
+C:\Users\Stach\Desktop\git\klasa2\desktopowe2tiGim\FileOperationsGIM_1\FileOperationsGIM_1\bin\Debug\net5.0\FileOperationsGIM_1.runtimeconfig.dev.json
+C:\Users\Stach\Desktop\git\klasa2\desktopowe2tiGim\FileOperationsGIM_1\FileOperationsGIM_1\bin\Debug\net5.0\FileOperationsGIM_1.dll
+C:\Users\Stach\Desktop\git\klasa2\desktopowe2tiGim\FileOperationsGIM_1\FileOperationsGIM_1\bin\Debug\net5.0\ref\FileOperationsGIM_1.dll
+C:\Users\Stach\Desktop\git\klasa2\desktopowe2tiGim\FileOperationsGIM_1\FileOperationsGIM_1\bin\Debug\net5.0\FileOperationsGIM_1.pdb
+C:\Users\Stach\Desktop\git\klasa2\desktopowe2tiGim\FileOperationsGIM_1\FileOperationsGIM_1\obj\Debug\net5.0\FileOperationsGIM_1.csprojAssemblyReference.cache
+C:\Users\Stach\Desktop\git\klasa2\desktopowe2tiGim\FileOperationsGIM_1\FileOperationsGIM_1\obj\Debug\net5.0\FileOperationsGIM_1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Stach\Desktop\git\klasa2\desktopowe2tiGim\FileOperationsGIM_1\FileOperationsGIM_1\obj\Debug\net5.0\FileOperationsGIM_1.AssemblyInfoInputs.cache
+C:\Users\Stach\Desktop\git\klasa2\desktopowe2tiGim\FileOperationsGIM_1\FileOperationsGIM_1\obj\Debug\net5.0\FileOperationsGIM_1.AssemblyInfo.cs
+C:\Users\Stach\Desktop\git\klasa2\desktopowe2tiGim\FileOperationsGIM_1\FileOperationsGIM_1\obj\Debug\net5.0\FileOperationsGIM_1.csproj.CoreCompileInputs.cache
+C:\Users\Stach\Desktop\git\klasa2\desktopowe2tiGim\FileOperationsGIM_1\FileOperationsGIM_1\obj\Debug\net5.0\FileOperationsGIM_1.dll
+C:\Users\Stach\Desktop\git\klasa2\desktopowe2tiGim\FileOperationsGIM_1\FileOperationsGIM_1\obj\Debug\net5.0\ref\FileOperationsGIM_1.dll
+C:\Users\Stach\Desktop\git\klasa2\desktopowe2tiGim\FileOperationsGIM_1\FileOperationsGIM_1\obj\Debug\net5.0\FileOperationsGIM_1.pdb
+C:\Users\Stach\Desktop\git\klasa2\desktopowe2tiGim\FileOperationsGIM_1\FileOperationsGIM_1\obj\Debug\net5.0\FileOperationsGIM_1.genruntimeconfig.cache

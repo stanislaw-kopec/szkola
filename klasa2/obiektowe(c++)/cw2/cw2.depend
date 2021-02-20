@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1604585278 source:d:\obiektowe zdalne]\cw2\functions.cpp
+	<iostream>
+	<cstdlib>
+
+1604585423 source:d:\obiektowe zdalne]\cw2\main.cpp
+	<iostream>
+	"Header.h"
+
+1604585278 d:\obiektowe zdalne]\cw2\header.h
+

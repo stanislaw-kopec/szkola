@@ -1,0 +1,45 @@
+﻿@page
+@model Swieta.Pages.ZyczeniaModel
+@{
+}
+<h3>Wygeneruj swoje życzenia świąteczne</h3>
+
+<form method="post">
+
+    <div id="formz">
+
+        <p>Wypełnij poniższy formularz: </p>
+
+        <div class="line">
+            <label for="Imie">Podaj Imię: </label>
+            <input type="text" name="Imie" required>
+        </div>
+        <div class="line">
+            <label for="Nazwisko">Podaj Nazwisko: </label>
+            <input type="text" name="Nazwisko" required />
+        </div>
+    </div>
+    <div class="line">
+        <input type="submit" value="Wygeneruj życzenia" />
+    </div>
+
+</form>
+
+
+@if (Model.IsPost)
+{
+<div class="wynik">
+    <h4>Życzenia Świąteczne 2020</h4>
+    <p><b>@Model.Zyczenia</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    Morbi tempor maximus tellus a tristique. Sed posuere facilisis commodo. 
+    In aliquam eleifend est quis suscipit. Proin at laoreet ante. Sed ac malesuada risus. 
+    Suspendisse dapibus efficitur sapien, vel placerat purus commodo in. Proin posuere faucibus elit. 
+    Pellentesque in eros semper, efficitur turpis et, mattis diam. Aenean vel urna ullamcorper, facilisis metus ornare, venenatis sapien. 
+    Aliquam quis quam venenatis, dapibus neque id, malesuada nibh.</p>
+    
+    <h5>Życzy: @Model.Imie @Model.Nazwisko</h5>
+
+
+    
+</div>
+}

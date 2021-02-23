@@ -1,0 +1,157 @@
+#conteiner{
+  background-color: #28ab24;
+  position: sticky;
+}
+body{
+  background-color: #437568;
+  margin: 0px;
+
+}
+#topbar{
+  background-color: #e02b2b;
+  height: 68px;
+  position: fixed;
+  width: 100%;
+  padding-right: 4.5%;
+}
+#menubok{
+  background-color: #28ab24;
+  float: left;
+  width: 10%;
+  margin-top: 68px;
+  position: fixed;
+  display: block;
+}
+#reszta{
+  background-image: url('obrazki/tlo4.jpg');
+  height: 1500px;
+  margin-left: 10%;
+  padding-top: 110px;
+  text-align: center;
+  font-size: 24px;
+}
+#stopka{
+   display: block;
+   width: 100%;
+   background-color: #fcba03;
+   text-align: center;
+}
+#domek{
+  float: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 10%;
+  text-align: center;
+  background-color: #fcba03;
+}
+#domek:hover{
+  background-color: #fcba03;
+
+}
+h1,h2,h3,p{
+  background-color: white;
+}
+.komurka{
+  float: left;
+  padding-top: 22.5px;
+  padding-bottom: 22.5px;
+  padding-left: 4.5%;
+  padding-right: 4.5%;
+  width: 9%;
+  text-align: center;
+  font-family: 'Baloo Bhai', cursive;
+  transition: transform 1s;
+}
+.komurka:hover{
+  background-color: #fcba03;
+  color: black;
+  transform: rotate(360deg);
+  border-radius: 40px;
+}
+.komurkab{
+  padding-top: 22.5px;
+  padding-bottom: 22.5px;
+  text-align: center;
+  font-family: 'Baloo Bhai', cursive;
+}
+.komurkab:hover{
+  background-color: #fcba03;
+  color: black;
+  animation-name: animacja1;
+  animation-duration: 1s;
+}
+.content{
+  margin-left: 28%;
+  margin-right: 28%;
+}
+#sdul{
+  margin-top: 200px;
+  clear:both;
+}
+.skol{
+  float: left;
+  width: 40%;
+  height: 60px;
+  padding: 5%;
+
+}
+#social{
+  text-align: left;
+}
+#fb{
+  float: left;
+  margin: 10px;
+  width: 30px;
+  height: 27px;
+  background-color: #3b5998;
+  text-align: center;
+  padding-top: 3px;
+}
+#fb:hover{
+  background-color: #2a4887;
+}
+#mes{
+  float: left;
+  margin: 10px;
+  width: 30px;
+  height: 27px;
+  background-color: #0084FF;
+  text-align: center;
+  padding-top: 3px;
+}
+#mes:hover{
+  background-color: #0073ee;
+}
+#insta{
+  float: left;
+  margin: 10px;
+  width: 30px;
+  height: 27px;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  text-align: center;
+  padding-top: 3px;
+}
+#insta:hover{
+  background: #c5138e;
+  background: radial-gradient(circle at 30% 107%, #ece386 0%, #ece386 5%, #ec4838 45%,#c5138e 60%,#1749da 90%);
+}
+.skolp{
+  text-align: justify;
+}
+li, ul{
+  text-align: left;
+  list-style-type: upper-roman;
+  background-color: white;
+}
+@keyframes animacja1 {
+  from {background-color: #28ab24;}
+  to {background-color: #fcba03;}
+}
+hr{
+	border-top: 1px solid red;
+}
+a{
+	text-decoration: none;
+	color: black;
+}

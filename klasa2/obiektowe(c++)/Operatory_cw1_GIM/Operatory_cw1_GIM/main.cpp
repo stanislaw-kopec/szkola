@@ -23,14 +23,15 @@ void cw1() {
 }
 void cw2() {
 	Circle c1;
-	Point p2(4, 8);
-	Point p3(10, 12);
-	Circle c2(14, p2);
+	Point p2(3, 3);
+	Point p3(5, 5);
+	Circle c2(3, p2);
 	Circle c4 = c2;
-	Circle* c3 = new Circle(2, p3);
+	Circle* c3 = new Circle(4, p3);
 	cout << c1 << endl;
 	cout << c2 << endl;
 	cout << (*c3) << endl;
+	cout << "======================================" << endl;
 //	c1.Info();
 //	c2.Info();
 //	c3->Info();
@@ -48,11 +49,13 @@ void cw2() {
 	else {
 		cout << "Srodek " << (*c3) << " nie wewnatrz " << c2 << endl;
 	}
+	cout << "==============================================" << endl;
 	if(c2.IsWholeInside(c1)) {
 		cout << c1 << endl << " Zawiera sie wewnatrz" << endl << c2 << endl;
 	}else {
 		cout << c1 << endl << " Niezawiera sie wewnatrz" << endl << c2 << endl;
 	}
+	cout << "----------------------------------------------" << endl;
 	if (c2.IsThisCircleInside(c1)) {
 		cout << c2 << endl << " Zawiera sie wewnatrz" << endl << c1 << endl;
 	}

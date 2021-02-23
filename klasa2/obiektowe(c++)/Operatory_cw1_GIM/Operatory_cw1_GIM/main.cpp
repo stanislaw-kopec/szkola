@@ -23,9 +23,11 @@ void cw1() {
 }
 void cw2() {
 	Circle c1;
-	Point p2(3, 3);
+	Point p2(3, 1);
+	Point p6(2, 1);
 	Point p3(5, 5);
-	Circle c2(3, p2);
+	Circle c2(1, p2);
+	Circle c6(4, p6);
 	Circle c4 = c2;
 	Circle* c3 = new Circle(4, p3);
 	cout << c1 << endl;
@@ -74,6 +76,23 @@ void cw2() {
 	c4.SetRadius(5);
 	cout << c2 << endl;
 	cout << c4 << endl;
+	cout << "======================================" << endl;
+	
+	cout << "Czy maja wsplna czesc (1=Tak, 0=Nie)" << endl;
+	cout << c6.CommonParts(c2) << endl;
+	cout << "----------------------------------------------" << endl;
+	
+	cout << "Czy maja 1 punkt wspolny (1=Tak, 0=Nie)" << endl;
+	cout << c6.CommonPoint(c2) << endl;
+	cout << "----------------------------------------------" << endl;
+
+	cout << "Czy maja 2 punkty wspolne (1=Tak, 0=Nie)" << endl;
+	cout << c6.CommonPointss(c2) << endl;
+	cout << "----------------------------------------------" << endl;
+	
+	cout << "Czy maja wszystkie punkty wspolne (1=Tak, 0=Nie)" << endl;
+	cout << c6.CommonPartsAll(c2) << endl;
+	cout << "----------------------------------------------" << endl;
 	delete c3;
 	c3 = nullptr;
 }

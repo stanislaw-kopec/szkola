@@ -46,15 +46,25 @@ public:
 
 	//todo Czy maja wsplna czesc
 	bool CommonParts(const Circle& c) {
-		return Distance() >= Distance(c) + c.radius;
+		//odleg³oœæ miedzy œrodkami kó³ jest mniejsza od sumy promieni, wiêc maj¹ wspóln¹ czeœæ
+		return Distance(c) <= radius + c.radius;
 	}
 	//todo czy maja 1 punkt wspolny
+	bool CommonPoint(const Circle& c) {
+		//odleg³oœæ miedzy œrodkami okrêgów jest równa sumie promieni, wiêc maj¹ jeden wspólny punkt
+		return Distance(c) == radius + c.radius;
+	}
 
 	//todo czy maja 2 punkty wspolne
+	bool CommonPointss(const Circle& c) {
+		//odleg³oœæ miedzy œrodkami okrêgów jest mniejsza od sumy promieni i jedno nie jest wewn¹trz drugiego, wiêc maj¹ jeden wspólny punkt
+		return Distance(c) <= radius + c.radius && !IsWholeInside(c) && !IsThisCircleInside(c);
+	}
 
 	//todo maja wszystkie punkty wspolne
 	bool CommonPartsAll(const Circle& c) {
-		return Distance(c) + c.radius == Distance() + radius;
+		//maj¹ œrodek w tym samym miejscu i maj¹ ten sam promieñ
+		return Distance() == center.Distance() && c.radius == radius;
 	}
 };
 

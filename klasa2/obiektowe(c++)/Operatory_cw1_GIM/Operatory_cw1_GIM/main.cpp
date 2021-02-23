@@ -23,11 +23,14 @@ void cw1() {
 }
 void cw2() {
 	Circle c1;
-	Point p2(3, 1);
-	Point p6(2, 1);
+
+	Point p2(2, 1); //p1
+	Point p6(3, 1); //p2
+
+	Circle c2(1, p2); //c1
+	Circle c6(1, p6); //c2
+	
 	Point p3(5, 5);
-	Circle c2(1, p2);
-	Circle c6(4, p6);
 	Circle c4 = c2;
 	Circle* c3 = new Circle(4, p3);
 	cout << c1 << endl;
@@ -77,22 +80,28 @@ void cw2() {
 	cout << c2 << endl;
 	cout << c4 << endl;
 	cout << "======================================" << endl;
+
+	cout << "c2 = " << c2 << endl;
+	cout << "c6 = " << c6 << endl;
+
+	cout << "======================================" << endl;
 	
-	cout << "Czy maja wsplna czesc (1=Tak, 0=Nie)" << endl;
-	cout << c6.CommonParts(c2) << endl;
+	//cout << "Czy maja wsplna czesc (1=Tak, 0=Nie)" << endl;
+	//cout << c2.CommonParts(c6) << endl;
+	//cout << "----------------------------------------------" << endl;
+	
+	cout << "Czy maja wszystkie punkty wspolne (1=Tak, 0=Nie)" << endl;
+	cout << c2.CommonPartsAll(c6) << endl;
 	cout << "----------------------------------------------" << endl;
-	
+
 	cout << "Czy maja 1 punkt wspolny (1=Tak, 0=Nie)" << endl;
-	cout << c6.CommonPoint(c2) << endl;
+	cout << c2.CommonPoint(c6) << endl;
 	cout << "----------------------------------------------" << endl;
 
 	cout << "Czy maja 2 punkty wspolne (1=Tak, 0=Nie)" << endl;
-	cout << c6.CommonPointss(c2) << endl;
+	cout << c2.CommonPointss(c6) << endl;
 	cout << "----------------------------------------------" << endl;
-	
-	cout << "Czy maja wszystkie punkty wspolne (1=Tak, 0=Nie)" << endl;
-	cout << c6.CommonPartsAll(c2) << endl;
-	cout << "----------------------------------------------" << endl;
+
 	delete c3;
 	c3 = nullptr;
 }

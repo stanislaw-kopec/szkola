@@ -45,10 +45,16 @@ public:
 	}
 
 	//todo Czy maja wsplna czesc
-
+	bool CommonParts(const Circle& c) {
+		return Distance() >= Distance(c) + c.radius;
+	}
 	//todo czy maja 1 punkt wspolny
 
 	//todo czy maja 2 punkty wspolne
 
+	//todo maja wszystkie punkty wspolne
+	bool CommonPartsAll(const Circle& c) {
+		return Distance(c) + c.radius == Distance() + radius;
+	}
 };
 

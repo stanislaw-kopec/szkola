@@ -70,6 +70,7 @@ void cw2() {
 	cout << "     zmieniam promien c4 " << endl;
 	cout << c2.IsWholeInside(c4) << endl;
 	cout << c2.IsThisCircleInside(c4) << endl;
+	cout << "======================================" << endl;
 	c4.SetRadius(5);
 	cout << c2 << endl;
 	cout << c4 << endl;

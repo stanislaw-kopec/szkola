@@ -44,7 +44,7 @@ public:
 		this->radius = radius;
 	}
 
-	//todo Czy maja wsplna czesc
+	//Czy maja wsplna czesc
 	bool CommonParts(const Circle& c) {
 		//odleg³oœæ miedzy œrodkami kó³ jest mniejsza od sumy promieni, wiêc maj¹ wspóln¹ czeœæ
 		return Distance(c) <= radius + c.radius;

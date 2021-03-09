@@ -25,7 +25,7 @@ void cw2() {
 	Circle c1;
 
 	Point p2(2, 1); //p1
-	Point p6(3, 1); //p2
+	Point p6(2, 1); //p2
 
 	Circle c2(1, p2); //c1
 	Circle c6(1, p6); //c2

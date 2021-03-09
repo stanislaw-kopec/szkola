@@ -14,18 +14,16 @@ class Item{
         return json_encode($this);
     }
     public function fromJSON(string $json):Item {
-        //ze stringa objekt item (funkcja z linijki 11 do 14) to mi nie działa!!!
+        //ze stringa objekt item (funkcja z linijki 11 do 14)
         $filePath = getcwd().DIRECTORY_SEPARATOR.DIR.DIRECTORY_SEPARATOR.ITEM_FILE;
             if (file_exists($filePath)){
                 $ItemData = file_get_contents($filePath);
-                $Item = unserialize($ItemData);           
+                $Item = unserialize($ItemData);
                     if (!empty($Item)){
                         $itemId = $Item->itemId;
                         $name = $Item->name;
                         }
             }
             return $Item;
-            echo "Z JSONa: ";
-            echo $Item;
     }
 }

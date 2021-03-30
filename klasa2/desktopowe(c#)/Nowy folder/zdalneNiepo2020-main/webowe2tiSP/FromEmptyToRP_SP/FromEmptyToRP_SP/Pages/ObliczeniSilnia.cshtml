@@ -1,0 +1,36 @@
+﻿@page
+@model FromEmptyToRP_SP.Pages.RekeruncjaModel
+@{
+}
+<h3>Obliczanie <span class="wyr">NWD</span> oraz <span class="wyr"> Silnia</span> rekurencyjnie i iteracyjnie</h3>
+<div id="wrapper">
+
+    <div>
+        <form id="silnia" method="post">
+            <fieldset>
+                <legend>Silnia</legend>
+                <div class="line">
+                    <label for="n">Podaj n: </label>
+                    <input type="number" min="1" max="19" required="" name="n" />
+                </div>
+                <div class="line">
+                    <label for="n">Wybierz metodę: </label><br />
+                    <input type="radio" name="metoda" value="rek" />Rekurencyjnie<br />
+                    <input type="radio" name="metoda" value="iter" />Iteracyjnie<br />
+                    <input type="radio" name="metoda" value="obie" checked />Rekurencyjnie iteracyjnie<br />
+                </div>
+                <div class="line">
+                    <label for="n"></label>
+                    <input type="submit" value="oblicz silnię" />
+                </div>
+            </fieldset>
+        </form>
+
+    </div>
+    @if (Model.IsPost)
+    {
+        <div class="silniaWynik">
+            @Model.ReturnSilnia()
+        </div>
+    }
+</div>

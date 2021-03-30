@@ -1,0 +1,32 @@
+﻿@page
+@model FromEmptyToRP_SP.Pages.NowaStronaModel
+@{
+}
+<h3>Pierwsza podstrona</h3>
+<h4>Sprawdź BMI</h4>
+<div>
+    <form method="post">
+       
+        <div class="line">
+            <label for="masa">Podaj masę: </label>
+            <input type="number" name="masa" min="1" max="300" required="true" step="0.1" />
+            <span>w kilogramach</span>
+        </div>
+        <div class="line">
+            <label for="wzrost">Podaj wzrost: </label>
+            <input type="number" name="wzrost" min="0.1" max="3" required="true" step="0.01" />
+            <span>w metrach</span>
+        </div>
+        <div class="line">
+            <input type="submit" value="Oblicz" />
+        </div>
+    </form>
+</div>
+@if (Model.IsPost) {
+    <div>
+        Wartość współczynnika BMI: @Model.BMI
+    </div>
+    <div>
+        <img src="media/pictures/bmi.jpg" alt="obrazek BMI"/>
+    </div>
+}

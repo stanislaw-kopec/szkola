@@ -1,0 +1,30 @@
+﻿@page
+@model RazorPagesADO_Net1.Pages.GameIndexModel
+@{
+}
+<div class="container">
+    <h2>Dodaj nową grę</h2>
+    <div class="badge badge-info">@ViewData["info"]</div>
+    <form method="post">
+        <div class="form-group">
+            <label asp-for="MyGame.Title"></label>
+            <input class="form-control" asp-for="MyGame.Title" />
+        </div>
+        <div class="form-group">
+            <label asp-for="MyGame.Category"></label>
+            <input class="form-control" asp-for="MyGame.Category" />
+        </div>
+        <div class="form-group">
+            <label asp-for="MyGame.Price"></label>
+            <input class="form-control" asp-for="MyGame.Price" />
+        </div>
+        <div class="form-group">
+            <label asp-for="MyGame.Description"></label>
+            <textarea class="form-control" asp-for="MyGame.Description" ></textarea>
+        </div>
+        <div class="form-group">
+            
+            <input class="btn btn-info btn-lg" type="submit" value="Dodaj grę" />
+        </div>
+    </form>
+</div>

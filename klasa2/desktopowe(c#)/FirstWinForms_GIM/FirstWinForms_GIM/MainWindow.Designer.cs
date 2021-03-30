@@ -70,6 +70,7 @@ namespace FirstWinForms_GIM
             this.btnEx3.TabIndex = 2;
             this.btnEx3.Text = "Ćwiczenie 3";
             this.btnEx3.UseVisualStyleBackColor = true;
+            this.btnEx3.Click += new System.EventHandler(this.btnEx3_Click);
             // 
             // btnEx2
             // 
@@ -97,6 +98,7 @@ namespace FirstWinForms_GIM
             this.tbInfo.Location = new System.Drawing.Point(250, 0);
             this.tbInfo.Multiline = true;
             this.tbInfo.Name = "tbInfo";
+            this.tbInfo.ReadOnly = true;
             this.tbInfo.Size = new System.Drawing.Size(568, 751);
             this.tbInfo.TabIndex = 1;
             // 

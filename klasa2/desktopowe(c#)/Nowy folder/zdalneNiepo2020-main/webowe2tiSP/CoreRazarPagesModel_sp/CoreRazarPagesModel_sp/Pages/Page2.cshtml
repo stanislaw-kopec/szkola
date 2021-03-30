@@ -1,0 +1,40 @@
+﻿@page
+@using CoreRazarPagesModel_sp.Models
+@model CoreRazarPagesModel_sp.Pages.Page2Model
+@{
+}
+<div class="container">
+    <form method="post">
+        <div class="form-group">
+            <label asp-for="MyFilm.Title"></label>
+            <input class="form-control" type="text" asp-for="MyFilm.Title" />
+        </div>
+        <div class="form-group">
+            <label asp-for="MyFilm.Length"></label>
+            <input class="form-control"   asp-for="MyFilm.Length" />
+        </div>
+        <div class="form-group">
+            <label asp-for="MyFilm.Data"></label>
+            <input type="date" class="form-control"   asp-for="MyFilm.Data" />
+        </div>
+        <div class="form-group">
+            <label asp-for="MyFilm.Director"></label>
+            <input class="form-control"   asp-for="MyFilm.Director" />
+        </div>
+        <div class="form-group">
+            <label asp-for="MyFilm.MyTypeFilm"></label>
+            <select class="form-control" asp-for="MyFilm.MyTypeFilm" 
+                    asp-items="Html.GetEnumSelectList<TypeFilm>()"></select>
+        </div>
+        <div class="form-group">
+            <input type="submit" class="btn btn-dark w-100"/>
+        </div>
+    </form>
+</div>
+
+@if ((bool) ViewData["IsPost"]) {
+    <div>
+        Aktualne dane filmu: @Model.MyFilm.Title reżyser: @Model.MyFilm.Director
+        długość trwania: @Model.MyFilm.Length gatunek: @Model.MyFilm.MyTypeFilm
+    </div>
+}

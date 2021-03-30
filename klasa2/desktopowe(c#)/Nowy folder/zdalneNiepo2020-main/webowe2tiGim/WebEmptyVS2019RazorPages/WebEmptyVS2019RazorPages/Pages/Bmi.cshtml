@@ -1,0 +1,43 @@
+﻿@page
+@model WebEmptyVS2019RazorPages.Pages.BmiModel
+@{
+}
+<h1>Współczynnik BMI</h1>
+<!--TODO formularz oraz obliczenie BMI-->
+<div class="content">
+    <div class="baner"><div>Obliczanie współczynnika BMI </div><img src="media/bmi.jpg" alt="obrazek BMI" /></div>
+    <div>
+        <form method="post">
+            <div class="line">
+                <label for="masa">Podaj masę: </label>
+                <input type="number" name="masa" id="masa" required step="0.1" min="1" max="300"/>
+                <span>kg</span>
+            </div>
+            <div class="line">
+                <label for="wzrost">Podaj wzrost: </label>
+                <input type="number" name="wzrost" id="wzrost" required min="10" max="290"/>
+                <span>cm</span>
+            </div>
+            <div>
+                <label>Wybierz płeć: </label><br/>
+                <input type="radio" name="plec" value="Kobieta" checked/>Kobieta<br/>
+                <input type="radio" name="plec" value="Mężczyzna"/>Mężczyzna<br/>
+            </div>
+            <input type="submit" value="Oblicz"/>
+        </form>
+    </div>
+    @if (Model.IsPost) {
+        <div>
+            <div>Obliczony współczynnik BMI: @Model.BMI co daje nam: @Model.Description() dla płci: @Model.Plec</div>
+            @if (@Model.BMI < 18.5) {
+                <img src="media/niedowaga.jpg" alt="niedowaga"/>
+            }else if (@Model.BMI >= 18.5 && @Model.BMI < 25) {
+                <img src="media/normana.jpg" alt="norma"/>
+            }
+            else {
+                <img src="media/nadwaga.jpg" alt="nadwaga"/>
+            }
+        </div>
+    }
+
+</div>

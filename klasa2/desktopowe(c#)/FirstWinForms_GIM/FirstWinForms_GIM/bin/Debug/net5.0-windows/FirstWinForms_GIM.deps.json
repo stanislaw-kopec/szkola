@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "FirstWinForms_GIM/1.0.0": {
+        "runtime": {
+          "FirstWinForms_GIM.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FirstWinForms_GIM/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

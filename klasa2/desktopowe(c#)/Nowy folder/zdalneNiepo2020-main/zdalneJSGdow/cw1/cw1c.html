@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <script>
+        
+        let answer = confirm("Czy podoba się biały kolor?");
+        if(!answer){
+            answer = confirm("To może zielony???");        
+            if(!answer){
+                answer = confirm("To maże żółty????");
+                if(answer){
+                    document.body.style.backgroundColor = "yellow";
+                }else{
+                    document.body.style.backgroundColor = "pink";
+                }
+            }
+            else{
+                document.body.style.backgroundColor = "green";
+            }
+
+           
+        }
+        for(let i=1; i <= 6; i++){
+            document.write(`<h${i}>Nagłówek numer ${i}</h${i}>`);
+        }
+        for(let i=1 ; i <= 6 ; i++){
+            document.write("<h"+i+">Nagłówek innym sposobem nr "+i+"</h"+i+">");
+        }
+        //todo za pomocą pętli for 10-elementowa lista numerowana i nienumerowana "Element nr 1....2....3"
+        document.write("<ul>");
+        for(let i=0;i<10;i++){
+            document.write("<li>Element nr "+(i+1)+"</li>");
+        }    
+        document.write("</ul>");
+
+
+        document.write("<ol>");
+        for(let i=0;i<10;i++){
+            document.write(`<li>Element nr ${i+1}</li>`);
+        }    
+        document.write("</ol>");
+    </script>
+</body>
+</html>

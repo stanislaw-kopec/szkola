@@ -2,12 +2,12 @@
 
 Stack::Stack() {
 	count = 0;
-	top = nullptr; //nullptr zastêpuje zmienn¹ null
+	top = nullptr; //nullptr zastÄ™puje zmiennÄ… null
 }
 
 bool Stack::Push(Item* item) {
 	if (item == nullptr) return false;
-	count++; //count zwiêkszaymy o 1
+	count++; //count zwiÄ™kszaymy o 1
 	item->setPrevious(top);
 	top = item;
 	return true;
@@ -18,7 +18,7 @@ Stack::~Stack() { //~ - destruktor - gdy obiekt wykracza poza zakres to automaty
 		Item* item = top;
 		Item* temp = nullptr;
 		while (item != nullptr) {
-			item = item;
+			temp = item;
 			item = item->getPrevious();
 			delete temp;
 		}
@@ -39,9 +39,22 @@ std::ostream& operator<<(std::ostream& os, const Stack& stack) { // operator prz
 	}
 	return os;
 }
-Item* Stack::Pop() { //Pop - œci¹ga ostani element (ze stosa)
-	Item* item = top;
-	top = item->getPrevious();
-	count--; //count zmniejamy o 1
-	return item;
+
+Item *Stack::Pop() {
+  if (top == nullptr) {
+    exit(1);
+  }
+  Item *item = top;
+  count--;
+  if (top->getPrevious() == nullptr) {
+    top = nullptr;
+    return item;
+  }
+  Item *penult_item = top;
+  while (penult_item->getPrevious()->getPrevious() != nullptr) {
+    penult_item = penult_item->getPrevious();
+  }
+  item = penult_item->getPrevious();
+  penult_item->setPrevious(nullptr);
+  return item;
 }
